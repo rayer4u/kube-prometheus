@@ -27,8 +27,8 @@ spec:
       automountServiceAccountToken: false
       containers:
       - args:
-        - --housekeeping_interval=10s
-        - --max_housekeeping_interval=15s
+        - --housekeeping_interval=15s
+        - --max_housekeeping_interval=30s
         - --event_storage_event_limit=default=0
         - --event_storage_age_limit=default=0
         - --enable_metrics=app,cpu,disk,diskIO,memory,network,process
