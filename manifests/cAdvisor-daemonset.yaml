@@ -31,7 +31,7 @@ spec:
         - --max_housekeeping_interval=30s
         - --event_storage_event_limit=default=0
         - --event_storage_age_limit=default=0
-        - --enable_metrics=app,cpu,disk,diskIO,memory,network,process
+        - --enable_metrics=app,cpu,diskIO,memory,network,process
         - --docker_only
         - --store_container_labels=false
         - --whitelisted_container_labels=io.kubernetes.container.name,io.kubernetes.pod.name,io.kubernetes.pod.namespace
@@ -42,7 +42,7 @@ spec:
           name: http
         resources:
           limits:
-            cpu: 800m
+            cpu: 1500m
             memory: 2000Mi
           requests:
             cpu: 400m
